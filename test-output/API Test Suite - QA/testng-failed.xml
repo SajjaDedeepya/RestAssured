@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Test Suite - QA]" guice-stage="DEVELOPMENT">
+  <parameter name="env" value="qa"/>
+  <listeners>
+    <listener class-name="com.Petal.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Petal Tests(failed)">
+    <classes>
+      <class name="Petal.BookAppointment">
+        <methods>
+          <include name="bookappointment"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.BookAppointment -->
+      <class name="Petal.RenewAvailability">
+        <methods>
+          <include name="renewAvailability"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.RenewAvailability -->
+      <class name="Petal.LockAvailability">
+        <methods>
+          <include name="setUp"/>
+          <include name="testPatchLockAvailability"/>
+        </methods>
+      </class> <!-- Petal.LockAvailability -->
+      <class name="Petal.CancelAppointment">
+        <methods>
+          <include name="setUp"/>
+          <include name="cancelappointment"/>
+        </methods>
+      </class> <!-- Petal.CancelAppointment -->
+    </classes>
+  </test> <!-- Petal Tests(failed) -->
+</suite> <!-- Failed suite [API Test Suite - QA] -->

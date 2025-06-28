@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Petal Tests(failed)">
+    <classes>
+      <class name="Petal.LockAvailability">
+        <methods>
+          <include name="setUp"/>
+          <include name="testPatchLockAvailability"/>
+        </methods>
+      </class> <!-- Petal.LockAvailability -->
+      <class name="Petal.FindPatient">
+        <methods>
+          <include name="testFindPatient"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.FindPatient -->
+      <class name="Petal.RenewAvailability">
+        <methods>
+          <include name="renewAvailability"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.RenewAvailability -->
+      <class name="Petal.AddPatient">
+        <methods>
+          <include name="testFindPatient"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.AddPatient -->
+      <class name="Petal.CancelAppointment">
+        <methods>
+          <include name="setUp"/>
+          <include name="cancelappointment"/>
+        </methods>
+      </class> <!-- Petal.CancelAppointment -->
+      <class name="Petal.GetAvailability">
+        <methods>
+          <include name="AvailabilityforOrphan"/>
+          <include name="Availabilitywithfamilydoctor"/>
+          <include name="setUp"/>
+          <include name="AvailabilitywithClinic"/>
+        </methods>
+      </class> <!-- Petal.GetAvailability -->
+      <class name="Petal.RefuseAvailability">
+        <methods>
+          <include name="refuseAvailability"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.RefuseAvailability -->
+      <class name="Petal.BookAppointment">
+        <methods>
+          <include name="bookappointment"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Petal.BookAppointment -->
+    </classes>
+  </test> <!-- Petal Tests(failed) -->
+  <test thread-count="5" name="Vitrai Tests(failed)">
+    <classes>
+      <class name="Vitrai.GetServiceRequest">
+        <methods>
+          <include name="getservicerequest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Vitrai.GetServiceRequest -->
+      <class name="Vitrai.UpdateQuestionnaire">
+        <methods>
+          <include name="updatequestionnaire"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Vitrai.UpdateQuestionnaire -->
+      <class name="Vitrai.CreateTask">
+        <methods>
+          <include name="createtask"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Vitrai.CreateTask -->
+      <class name="Vitrai.UpdateServiceRequest">
+        <methods>
+          <include name="updateservicerequest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Vitrai.UpdateServiceRequest -->
+    </classes>
+  </test> <!-- Vitrai Tests(failed) -->
+</suite> <!-- Failed suite [API Test Suite] -->

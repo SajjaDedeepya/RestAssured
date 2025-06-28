@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-28T15:41:44 IST" name="Default suite" finished-at="2025-06-28T15:41:54 IST" duration-ms="9640">
+    <groups>
+      <group name="Availability">
+        <method signature="GetAvailability.AvailabilityforOrphan()[pri:0, instance:Petal.GetAvailability@36804139]" name="AvailabilityforOrphan" class="Petal.GetAvailability"/>
+        <method signature="GetAvailability.AvailabilitywithClinic()[pri:0, instance:Petal.GetAvailability@36804139]" name="AvailabilitywithClinic" class="Petal.GetAvailability"/>
+      </group> <!-- Availability -->
+      <group name="getAvailability">
+        <method signature="GetAvailability.Availabilitywithfamilydoctor()[pri:0, instance:Petal.GetAvailability@36804139]" name="Availabilitywithfamilydoctor" class="Petal.GetAvailability"/>
+      </group> <!-- getAvailability -->
+    </groups>
+    <test started-at="2025-06-28T15:41:44 IST" name="Default test" finished-at="2025-06-28T15:41:54 IST" duration-ms="9640">
+      <class name="Petal.GetAvailability">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Petal.GetAvailability@36804139]" started-at="2025-06-28T15:41:44 IST" name="setUp" finished-at="2025-06-28T15:41:45 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AvailabilityforOrphan()[pri:0, instance:Petal.GetAvailability@36804139]" started-at="2025-06-28T15:41:45 IST" name="AvailabilityforOrphan" finished-at="2025-06-28T15:41:49 IST" duration-ms="4314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AvailabilityforOrphan -->
+        <test-method signature="AvailabilitywithClinic()[pri:0, instance:Petal.GetAvailability@36804139]" started-at="2025-06-28T15:41:49 IST" name="AvailabilitywithClinic" finished-at="2025-06-28T15:41:52 IST" duration-ms="2343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AvailabilitywithClinic -->
+        <test-method signature="Availabilitywithfamilydoctor()[pri:0, instance:Petal.GetAvailability@36804139]" started-at="2025-06-28T15:41:52 IST" name="Availabilitywithfamilydoctor" finished-at="2025-06-28T15:41:54 IST" duration-ms="2256" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+at java.base/java.util.Objects.checkIndex(Objects.java:365)
+at java.base/java.util.ArrayList.get(ArrayList.java:428)
+at Petal.GetAvailability.Availabilitywithfamilydoctor(GetAvailability.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Availabilitywithfamilydoctor -->
+      </class> <!-- Petal.GetAvailability -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

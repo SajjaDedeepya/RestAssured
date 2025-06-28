@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite - QA">
+    <listeners>
+        <listener class-name="com.Petal.TestListener"/>
+    </listeners>
+    <parameter name="env" value="qa"/>
+    <test name="Petal Tests">
+        <classes>
+            <class name="Petal.AddPatient"/>
+            <class name="Petal.GetAvailability"/>
+            <class name="Petal.LockAvailability"/>
+            <class name="Petal.RenewAvailability"/>
+            <class name="Petal.BookAppointment"/>
+            <class name="Petal.CancelAppointment"/>
+            <class name="Petal.FindPatient"/>
+            <class name="Petal.GetServiceTypes"/>
+        </classes>
+    </test>
+    <test name="Vitrai Tests">
+        <classes>
+            <class name="Vitrai.CreateTask"/>
+            <class name="Vitrai.GetServiceRequest"/>
+            <class name="Vitrai.UpdateQuestionnaire"/>
+            <class name="Vitrai.UpdateServiceRequest"/>
+        </classes>
+    </test>
+</suite>

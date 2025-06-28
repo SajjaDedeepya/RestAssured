@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Vontre Sante]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Petal(failed)">
+    <parameter name="configKey" value="petal"/>
+    <classes>
+      <class name="Petal.FindPatient">
+        <methods>
+          <include name="testFindPatient"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Petal.FindPatient -->
+    </classes>
+  </test> <!-- Petal(failed) -->
+</suite> <!-- Failed suite [Vontre Sante] -->
